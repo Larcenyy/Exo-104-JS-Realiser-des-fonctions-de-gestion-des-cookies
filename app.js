@@ -36,8 +36,8 @@ function setCookie(cookieName, cookieValue) {
  */
 function getCookie(cookieName) {
     // Votre code ici.
-    let mycookie = document.cookie.split(";")
-    return mycookie.map(mycookie => mycookie.trim());
+    let myCookie = document.cookie.split(";")
+    return myCookie.map(myCookie => myCookie.trim());
 }
 
 
