@@ -11,11 +11,20 @@ console.log(document.cookie);
  * @returns {string[]}
  */
 
+
+let result = confirm("Acceptez vous nos cookies?");
+if (result === true) {
+    console.log("il a accepté")
+    getCookies()
+} else {
+    console.log("il a dit non")
+    
+}
+
 function getCookies() {
     let cookies = document.cookie.split(';');
     return cookies.map(cookie => cookie.trim());
 }
-
 
 /**
  * TODO Cette fonction doit permettre de créer un nouveau cookie avec le nom et la valeur au choix !
